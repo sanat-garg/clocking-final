@@ -1,5 +1,6 @@
 // Auto-generated attachments file
 // Access attachments via: window.attachments["filename.ext"]
 window.attachments = {
-  "data.csv": "data:@file/csv;base64,77u/UHJvZHVjdCxTYWxlDQpBQkMsMTAwDQpYWVosMjAwDQoxMjMsMTUwDQo0NTYsMjAwDQo3ODksMzAwDQoxMDAsNzAwDQoxMTEsNTAwDQpQUVIsMTAwDQpMTU4sMTUw"
+  "data.csv": "data:@file/csv;base64,77u/UHJvZHVjdCxTYWxlDQpBQkMsMTAwDQpYWVosMjAwDQoxMjMsMTUwDQo0NTYsMjAwDQo3ODksMzAwDQoxMDAsNzAwDQoxMTEsNTAwDQpQUVIsMTAwDQpMTU4sMTUw",
+  "currency.json": "data:@file/json;base64,WwogIHsKICAgICJDdXJyZW5jeSI6ICJVU0QiLAogICAgIlByaWNlIHBlciBJTlIiOiAwLjEKICB9LAogIHsKICAgICJDdXJyZW5jeSI6ICJDTlkiLAogICAgIlByaWNlIHBlciBJTlIiOiAwLjUKICB9LAogIHsKICAgICJDdXJyZW5jeSI6ICJHQlAiLAogICAgIlByaWNlIHBlciBJTlIiOiAwLjA1CiAgfSwKICB7CiAgICAiQ3VycmVuY3kiOiAiRVVSIiwKICAgICJQcmljZSBwZXIgSU5SIjogMC4wOQogIH0KXQ=="
 };

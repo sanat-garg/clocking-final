@@ -7,12 +7,14 @@ This application fetches sales data from a CSV file and calculates the total sal
 1. Open the `index.html` file in a web browser.
 2. The application will automatically fetch the `data.csv` file and calculate the total sales.
 3. The total sales amount will be displayed on the page.
+4. Select a currency from the dropdown to convert the total sales amount.
 
 ## Features and Functionality
 - Fetches data from a CSV file.
 - Calculates the total sales from the sales column.
 - Displays the total sales in a user-friendly format.
 - Utilizes Bootstrap 5 for styling.
+- Allows users to select a currency and converts the total sales amount accordingly.
 
 ## Special Instructions or Requirements
 - Ensure that the `attachments.js` file is included in the same directory as `index.html`.

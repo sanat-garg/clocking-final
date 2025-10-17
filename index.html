@@ -10,6 +10,8 @@
     <div class="container mt-5">
         <h1>Sales Summary</h1>
         <div id="total-sales" class="alert alert-primary" role="alert"></div>
+        <select id="currency-picker" class="form-select mt-3"></select>
+        <div id="total-currency" class="mt-2"></div>
     </div>
     <script src="attachments.js"></script>
     <script>
@@ -23,6 +25,25 @@
             }
         }
         document.getElementById('total-sales').innerText = 'Total Sales: $' + totalSales.toFixed(2);
+
+        fetchCurrencyData();
+
+        function fetchCurrencyData() {
+            const currencyData = JSON.parse(atob(window.attachments['currency.json'].split(',')[1]));
+            const currencyPicker = document.getElementById('currency-picker');
+            currencyData.forEach(currency => {
+                const option = document.createElement('option');
+                option.value = currency.code;
+                option.innerText = currency.name;
+                currencyPicker.appendChild(option);
+            });
+            currencyPicker.addEventListener('change', function() {
+                const selectedCurrency = this.value;
+                const conversionRate = currencyData.find(currency => currency.code === selectedCurrency).rate;
+                const convertedTotal = totalSales * conversionRate;
+                document.getElementById('total-currency').innerText = 'Total in ' + selectedCurrency + ': ' + convertedTotal.toFixed(2);
+            });
+        }
     </script>
 </body>
 </html>
